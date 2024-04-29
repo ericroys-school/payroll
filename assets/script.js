@@ -56,6 +56,7 @@ const collectEmployees = function () {
   return employees;
 };
 
+/** Print average salary information to console */
 function printSalary(count, avg) {
   console.log(
     `The average employee salary for (${count}) employees is (\$${avg})`
@@ -65,6 +66,7 @@ function printSalary(count, avg) {
 const displayAverageSalary = function (employeesArray) {
   let avg = 0;
 
+  //if working with no entry then print zeros
   if (!employeesArray || employeesArray.length < 1) {
     printSalary(0, 0);
     return;
