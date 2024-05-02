@@ -89,7 +89,7 @@ const displayAverageSalary = function (employeesArray) {
 const getRandomEmployee = function (employeesArray) {
   if (employeesArray && employeesArray.length > 0) {
     let winner =
-      employeesArray[Math.floor(Math.random() * (employeesArray.length - 1))];
+      employeesArray[Math.floor(Math.random() * employeesArray.length)];
     console.log(
       `Congratulations to ${winner.firstName} ${winner.lastName}, our random drawing winner`
     );
